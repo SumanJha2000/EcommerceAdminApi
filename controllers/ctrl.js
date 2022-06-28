@@ -26,7 +26,7 @@ const ctrl = {
         const id = req.params.id;
         await Product.findByIdAndDelete({ _id: id });
         res.status(200).json({
-            message: "successfully deleted"
+            message: "product deleted"
         })
     },
 
